@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria Exclusiva | Modern UI</title>
+    <title>Álbum de Memórias | Álbum de Fotos</title>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- FontAwesome para ícones modernos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -14,12 +14,12 @@
     <div class="main-container">
         <!-- Header -->
         <header class="hero">
-            <span class="badge">📸 Portfólio Exclusivo</span>
-            <h1>Galeria em Destaque</h1>
-            <p>Navegue horizontalmente para explorar as fotos</p>
+            <span class="badge">📸 Nosso Álbum de Memórias</span>
+            <h1>Momentos Guardados com Carinho</h1>
+            <p>Arraste para o lado ou navegue pelas memórias abaixo</p>
         </header>
     
-        <!-- Wrapper da Galeria -->
+        <!-- Wrapper da Galeria Horizontal -->
         <div class="gallery-wrapper">
             <button class="nav-btn prev-btn" id="prev-btn" aria-label="Anterior">
                 <i class="fa-solid fa-chevron-left"></i>
@@ -27,32 +27,44 @@
 
             <div class="gallery">
                 <div class="gallery-group">
-                    <div class="image-card">
-                        <img src="images/image-1.png" alt="Treino na Academia">
-                        <div class="image-overlay"><span>Foco & Treino</span></div>
+                    <div class="image-card polaroid rotate-left">
+                        <div class="polaroid-inner">
+                            <img src="images/image-1.png" alt="Treino na Academia">
+                            <div class="polaroid-caption">Foco & Treino ✨</div>
+                        </div>
                     </div>
-                    <div class="image-card">
-                        <img src="images/image-2.png" alt="Evento Social">
-                        <div class="image-overlay"><span>Momentos Especiais</span></div>
+                    <div class="image-card polaroid rotate-right">
+                        <div class="polaroid-inner">
+                            <img src="images/image-2.png" alt="Evento Social">
+                            <div class="polaroid-caption">Momentos Especiais 💛</div>
+                        </div>
                     </div>
-                    <div class="image-card">
-                        <img src="images/image-3.png" alt="Trilha Off-road">
-                        <div class="image-overlay"><span>Aventura & Trilha</span></div>
+                    <div class="image-card polaroid rotate-left">
+                        <div class="polaroid-inner">
+                            <img src="images/image-3.png" alt="Trilha Off-road">
+                            <div class="polaroid-caption">Aventura & Trilha 🌿</div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="gallery-group">
-                    <div class="image-card">
-                        <img src="images/image-4.png" alt="Pôr do Sol nas Dunas">
-                        <div class="image-overlay"><span>Pôr do Sol & Dunas</span></div>
+                    <div class="image-card polaroid rotate-right">
+                        <div class="polaroid-inner">
+                            <img src="images/image-4.png" alt="Pôr do Sol nas Dunas">
+                            <div class="polaroid-caption">Pôr do Sol & Dunas 🌅</div>
+                        </div>
                     </div>
-                    <div class="image-card">
-                        <img src="images/image-5.png" alt="Expedição Amontada">
-                        <div class="image-overlay"><span>Expedição & Natureza</span></div>
+                    <div class="image-card polaroid rotate-left">
+                        <div class="polaroid-inner">
+                            <img src="images/image-5.png" alt="Expedição Amontada">
+                            <div class="polaroid-caption">Expedição & Natureza 🗺️</div>
+                        </div>
                     </div>
-                    <div class="image-card">
-                        <img src="images/image-6.png" alt="Passeio de Barco">
-                        <div class="image-overlay"><span>Passeio Náutico</span></div>
+                    <div class="image-card polaroid rotate-right">
+                        <div class="polaroid-inner">
+                            <img src="images/image-6.png" alt="Passeio de Barco">
+                            <div class="polaroid-caption">Passeio Náutico ⛵</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -62,9 +74,38 @@
             </button>
         </div>
 
+        <!-- Seção de Mais Fotos (Álbum Inferior em Grid) -->
+        <section class="extended-album">
+            <div class="section-title">
+                <h2>📖 Outras Páginas do Álbum</h2>
+                <p>Mais instantes inesquecíveis capturados</p>
+            </div>
+            
+            <div class="album-grid">
+                <div class="image-card polaroid rotate-left">
+                    <div class="polaroid-inner">
+                        <img src="images/image-7.png" alt="Foto 7">
+                        <div class="polaroid-caption">Sorrisos & Cia 📸</div>
+                    </div>
+                </div>
+                <div class="image-card polaroid rotate-right">
+                    <div class="polaroid-inner">
+                        <img src="images/image-8.png" alt="Foto 8">
+                        <div class="polaroid-caption">Instante Único 🌟</div>
+                    </div>
+                </div>
+                <div class="image-card polaroid rotate-left">
+                    <div class="polaroid-inner">
+                        <img src="images/image-9.png" alt="Foto 9">
+                        <div class="polaroid-caption">Lembrança Boa 💫</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Rodapé -->
         <footer>
-            <p>&copy; 2026 Desenvolvido com foco em UI/UX moderno. Todos os direitos reservados.</p>
+            <p>&copy; 2026 Álbum de Memórias. Todos os direitos reservados.</p>
         </footer>
     </div>
     

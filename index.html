@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Exclusiva | Modern UI</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome para ícones modernos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <!-- Header -->
+        <header class="hero">
+            <span class="badge">📸 Portfólio Exclusivo</span>
+            <h1>Galeria em Destaque</h1>
+            <p>Navegue horizontalmente para explorar as fotos</p>
+        </header>
+    
+        <!-- Wrapper da Galeria -->
+        <div class="gallery-wrapper">
+            <button class="nav-btn prev-btn" id="prev-btn" aria-label="Anterior">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+
+            <div class="gallery">
+                <div class="gallery-group">
+                    <div class="image-card">
+                        <img src="images/image-1.png" alt="Treino na Academia">
+                        <div class="image-overlay"><span>Foco & Treino</span></div>
+                    </div>
+                    <div class="image-card">
+                        <img src="images/image-2.png" alt="Evento Social">
+                        <div class="image-overlay"><span>Momentos Especiais</span></div>
+                    </div>
+                    <div class="image-card">
+                        <img src="images/image-3.png" alt="Trilha Off-road">
+                        <div class="image-overlay"><span>Aventura & Trilha</span></div>
+                    </div>
+                </div>
+
+                <div class="gallery-group">
+                    <div class="image-card">
+                        <img src="images/image-4.png" alt="Pôr do Sol nas Dunas">
+                        <div class="image-overlay"><span>Pôr do Sol & Dunas</span></div>
+                    </div>
+                    <div class="image-card">
+                        <img src="images/image-5.png" alt="Expedição Amontada">
+                        <div class="image-overlay"><span>Expedição & Natureza</span></div>
+                    </div>
+                    <div class="image-card">
+                        <img src="images/image-6.png" alt="Passeio de Barco">
+                        <div class="image-overlay"><span>Passeio Náutico</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="nav-btn next-btn" id="next-btn" aria-label="Próximo">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <!-- Rodapé -->
+        <footer>
+            <p>&copy; 2026 Desenvolvido com foco em UI/UX moderno. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
